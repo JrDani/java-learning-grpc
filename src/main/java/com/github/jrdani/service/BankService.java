@@ -1,6 +1,7 @@
 package com.github.jrdani.service;
 
 import com.github.jrdani.models.*;
+import com.github.jrdani.server.*;
 import io.grpc.stub.*;
 
 public class BankService extends BankServiceGrpc.BankServiceImplBase {
@@ -9,7 +10,7 @@ public class BankService extends BankServiceGrpc.BankServiceImplBase {
     public void getBalance(BalanceCheckRequest request, StreamObserver<Balance> responseObserver) {
         int accountNumber = request.getAccountNumber();
         Balance balance = Balance.newBuilder()
-                .setAmount(accountNumber * 100)
+                .setAmount(AccountDatabase.getBalance(accountNumber))
                 .build();
 
         responseObserver.onNext(balance);
