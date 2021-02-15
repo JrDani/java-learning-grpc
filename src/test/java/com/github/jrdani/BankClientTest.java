@@ -1,6 +1,7 @@
 package com.github.jrdani;
 
 import com.github.jrdani.models.*;
+import com.github.jrdani.responseHandling.*;
 import io.grpc.*;
 import io.grpc.stub.*;
 import org.junit.jupiter.api.*;

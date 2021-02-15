@@ -1,4 +1,4 @@
-package com.github.jrdani;
+package com.github.jrdani.responseHandling;
 
 import com.github.jrdani.models.*;
 import io.grpc.stub.*;
