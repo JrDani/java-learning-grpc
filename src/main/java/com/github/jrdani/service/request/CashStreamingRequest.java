@@ -1,4 +1,4 @@
-package com.github.jrdani.service;
+package com.github.jrdani.service.request;
 
 import com.github.jrdani.models.*;
 import com.github.jrdani.server.*;

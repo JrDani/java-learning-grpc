@@ -2,6 +2,7 @@ package com.github.jrdani.service;
 
 import com.github.jrdani.models.*;
 import com.github.jrdani.server.*;
+import com.github.jrdani.service.request.*;
 import io.grpc.*;
 import io.grpc.stub.*;
 
